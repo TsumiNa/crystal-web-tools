@@ -7,6 +7,6 @@ RUN git clone https://github.com/luckyframework/lucky_cli &&\
     shards install &&\
     crystal build src/lucky.cr --release --no-debug &&\
     mv lucky /usr/local/bin/
-ADD overmind /usr/local/bin/
+ADD overmind /usr/local/bin/ && chmod 777 /usr/local/bin/overmind
 
 CMD ["lucky", "--version"]
