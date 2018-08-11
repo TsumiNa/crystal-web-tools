@@ -1,6 +1,6 @@
 FROM jrei/crystal-alpine:latest
 
-RUN apk add --update --no-cache --force-overwrite libpng-dev curl git vim nodejs yarn
+RUN apk add --update --no-cache --force-overwrite libpng-dev curl git vim nodejs yarn tmux
 RUN git clone https://github.com/luckyframework/lucky_cli &&\
     cd lucky_cli &&\ 
     git checkout v0.11.0 &&\
