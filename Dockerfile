@@ -33,7 +33,7 @@ RUN set -ex \
     \
     && gem install dpl rdoc json --no-document \ 
     && apk del .ruby-builddeps \
-    && apk add --no-cache --force-overwrite git
+    && apk add --no-cache --force-overwrite git curl
 
 # RUN gem install dpl rdoc json --no-document
 
